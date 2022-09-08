@@ -1,0 +1,156 @@
+** start of HTML **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Cyber Workforce</title>
+  </head>
+  <body>
+    <h1 id="title">Cyber Workforce</h1>
+    <p id="description">We can make a form that suit your needs ;), this one is for a team of especialized devs that work together in special projects.</p>
+    <form action='www.caetanodecarvalhoamorim.com' id="survey-form">
+      <fieldset>
+        <label id="name-label"> Name: <input id="name" type="text" placeholder="Enter your name" required /></label>
+        <label id="email-label">Email: <input id="email" type="email" placeholder="Enter your email" required /></label>
+      </fieldset>
+      <fieldset>
+        <label id="number-label">Number of devs you're looking for (opitional): <input id="number" type="number" min="1" max="99" placeholder="Number" /></label>
+        <label>Company's name: <input id="companyname" placeholder="Your company's name" type="text" required /></label>
+        <label>
+          <p>Recruiting for: </p><input class="sline" id="small-business" type="radio" name="account-type" value="1" /> Small business (less than 20 employees)</label>
+        <label><input class="sline" id="medium-business" type="radio" name="account-type" value="2" /> Medium Business (until 150 employees) </label>
+        <label><input class="sline" id="big-bussiness" type="radio" name="account-type" value="3" /> Big Business (more than 150 employees) </label>
+      </fieldset>
+      <fieldset>
+        <label>
+            Project needs? (Check all that aplly)
+        </label>
+        <label><input class="sline" name="project-needs" value="front-end" type="checkbox" />Front-end
+        </label>
+        <label>
+          <input class="sline" name="project-needs" value="back-end" type="checkbox" />Back-end
+        </label>
+        <label>
+          <input class="sline" name="project-needs" value="data-visualization" type="checkbox" />Data Visualization
+        </label>
+        <label>
+          <input class="sline" name="project-needs" value="data-structuring" type="checkbox" />Data Structuring
+        </label>
+        <label>
+          <input class="sline" name="project-needs" value="data-minning" type="checkbox" />Data minning</label>
+        <label>
+          <input class="sline" name="project-needs" value="machine-learning" type="checkbox" />Machine Learning
+        </label>
+        <label>
+          <input class="sline" name="project-needs" value="data-forecasting" type="checkbox" />Data Forecasting
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>
+          Desired means of communication during project: 
+        </label>
+        <label>
+          <input class="sline" name="commmunication" value="in-person-meetings" type="checkbox" />In Person Meetings
+        </label>
+        <label>
+          <input class="sline" name="commmunication" value="videoconference-meetings" type="checkbox" />Videoconference meetings
+        </label>
+        <label>
+          <input class="sline" name="commmunication" value="on-site" type="checkbox" />On Site
+        </label>
+        <label>
+          <input class="sline" name="commmunication" value="additional-courses" type="checkbox" />Additional Courses
+        </label>
+        <label>
+          Desired experience: 
+          <select id="dropdown" name="experience">
+            <option value="">(select one)</option>
+            <option value="1">0-6 months coding</option>
+            <option value="2">Interns</option>
+            <option value="3">Experienced devs</option>
+            <option value="4">Certified senior level Devs</option>
+          </select>
+        </label>
+        <label>Description of work: <textarea rows="15"cols="30" id="work-description" placeholder="Tell us about the project :)"></textarea>
+        </label>
+      </fieldset>
+      <label name="terms-and-conditions">
+          <input class="sline" value="yes" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="www.caetanoamorim.com">terms and conditions</a>
+        </label>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
+
+** end of HTML **
+
+** start of CSS **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+h1 {
+  margin: 1em auto;
+  text-align: center;
+}
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+.sline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+p:first-of-type {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+** end of CSS **
+
